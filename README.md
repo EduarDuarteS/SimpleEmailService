@@ -45,6 +45,7 @@ npm -v
 6.13.7
 ```
 
+```
 Git installation on AWS EC2 instance:
 #Create an EC2 instance with Amazon Linux 2 with internet access
 #Connect to your instance using putty
@@ -69,7 +70,7 @@ sudo yum install git -y
  
 #Check git version
 git version
-
+```
 
 ***NOTE: Here you will want to edit config.json with your AWS keys and in app.js you will want to edit the email address with your own email address. For this tutorial we will just send email to ourselves.***
 
