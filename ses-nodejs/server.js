@@ -4,13 +4,13 @@ const app = express();
 
 const sesClient = require('./ses-client');
 
-app.use(bodyParser.urlencoded({ extended: false }));  
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
+app.get('/send', (req, res) => {
     // call sesClient to send an email
-    sesClient.sendEmail('user@example.com', "Hey! Welcome", "This is the body of email");
-    
+    sesClient.sendEmail('e.duartes@uniandes.edu.co', "Hey! Welcome", "This is the body of email");
+
     res.send('Email is sent!');
 });
 
